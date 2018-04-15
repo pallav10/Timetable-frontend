@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 			$.ajax({
 	    type: "POST",
-	    url: "http://127.0.0.1:8080/sheduler/users/",
+	    url: "http://127.0.0.1:8000/sheduler/users/",
 	    data: JSON.stringify({"email": $("#newUsername").val(),"password": $("#newUserPassword").val()}),
 	    contentType: "application/json; charset=utf-8",
 	    dataType: "json",

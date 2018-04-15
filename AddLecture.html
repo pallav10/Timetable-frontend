@@ -4,14 +4,32 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="container">
-		<h1>BMIIT</h1>
 
+			<nav class = "navbar navbar-default" role = "navigation">
+	   
+			   <div class = "navbar-header">
+			      <a class = "navbar-brand" href = "#">BMIIT</a>
+			   </div>
+
+			<div class="col-md-6">
+		      <ul class = "nav navbar-nav">
+		         <li><a href = "AddLecture.html">Add Lectures</a></li>
+		         <li><a href = "sem1-A.html">view Timetable</a></li>
+		         <li><a href = "registeration.html">Register Faculty</a></li>
+		      </ul>
+  			</div>
+  			  <div align="right" class="col-md-4 col-xs-12 buttons float-sm-left">
+           <a href="login.html" class="btn btn-primary btn-sm button1" id="Logout" role="button">Logout</a>
+
+  <!--               <a href="registeration.html" class="btn btn-primary btn-sm button2" role="button">Register</a>   -->
+         </div>
+			</nav>
 		<hr>
 		<div class="container">
 			<div class="row">
@@ -21,7 +39,7 @@
 						  	<label for="sel1">Day</label>
 						</div>
 						<div class="col-sm-2">  	
-						  	<select class="form-control" id="sel1">
+						  	<select id="days" class="form-control" id="sel1">
 						  	  <option>Monday</option>
 						  	  <option>Tuesday</option>
 						  	  <option>Wednesday</option>
@@ -32,55 +50,36 @@
 						</div>
 <!---___________________________________________________________semester______________________________________________________________-->
 						<div class="col-sm-1">
-							<label for="sel1">Semester</label>
+							<label for="sem">Semester</label>
 						</div>
 						<div class="col-sm-2"> 
-
-						  	<select class="form-control" id="sel1">
-						  	  <option>1</option>
-						  	  <option>2</option>
-						  	  <option>3</option>
-						  	  <option>4</option>
-						  	  <option>5</option>
-						  	  <option>6</option>
+						  	<select class="form-control" id="sem">
 						 	</select>
+						</div>
+
+						<div class="col-sm-3">
+							<div class="col-sm-6">
+								<label>Class</label>
+							</div>
+
+							<div class="col-sm-6" >		
+								<table>
+									<tr>
+										<td id="classroom">
+
+										</td>
+									</tr>
+								</table>
+						 	</div>
+							 		
+							
 						</div>
 <!---___________________________________________________________Division______________________________________________________________-->
-						<div class="col-sm-1">
-							<label for="sel1">Division</label>
-						</div>
-						<div class="col-sm-2"> 
-						  	<select class="form-control" id="sel1">
-						  	  <option>A</option>
-						  	  <option>B</option>
-						 	</select>
-						</div>
-					</div>
+						
 			</div>
 			<br>
 <!---___________________________________________________________Class_Wing____________________________________________________________-->
-			<div class="row">		
-						<div class="col-sm-1">
-							<label for="sel1">Class</label>
-						</div>
-						<div class="col-sm-3"> 
-							<div class="col-sm-6"> 
-						  	<select class="form-control" id="sel1">
-						  	  <option>G</option>
-						  	  <option>F</option>
-						 	</select>
-						 	</div>
-						 	<div class="col-sm-6"> 
-						 	<select class="form-control">
-						  	  <option>201</option>
-						  	  <option>202</option>
-						  	  <option>206</option>
-						  	  <option>207</option>
-						  	  </select>
-						 	</div>
-						</div>
-				</div>
-			</div>
+			
 		
 
 
@@ -105,7 +104,7 @@
 			      <tr>
 			        <th>Subject</th>
 			        <td>
-			        	<select id="list-of-subject-1" class="form-control ">
+			        	<select id="list-of-subject-1" class="form-control">
 						</select>
 			        </td>
 			        <td>
@@ -132,80 +131,74 @@
 <!---________________________________________________________Faculty__________________________________________________________________-->
 			      <tr>
 			      	<th>Faculty</th>
-			      	<td>
-			      		<span id="list-of-Faculty-1" class="form-control" >
-						</span>
+			      	<td id="list-of-Faculty-1">
 			      	</td>
-			      	<td>
-			      		<select id="list-of-Faculty-2" class="form-control" >
-						</select>
+			      	<td id="list-of-Faculty-2">
 			      	</td>
-			      	<td>
-			      		<select id="list-of-Faculty-3" class="form-control" >
-						</select>
+			      	<td id="list-of-Faculty-3">
 			      	</td>
-			      	<td>
-			      		<select id="list-of-Faculty-4" class="form-control" >
-						</select>
+			      	<td id="list-of-Faculty-4">
 			      	</td>
-			      	<td>
-			      		<select id="list-of-Faculty-5" class="form-control" >
-						</select>
+			      	<td id="list-of-Faculty-5">
 			      	</td>
-			      	<td>
-			      		<select id="list-of-Faculty-6" class="form-control" >
-						</select>
+			      	<td id="list-of-Faculty-6">
 			      	</td>
 			      </tr>
 <!---________________________________________________________Lab__________________________________________________________________-->
 
-			      <tr>
+			      <tr id="lab">
 			      	<th>Lab</th>
 			      	<td>
 			      		<div class="checkbox">
-						 	<label><input type="checkbox" value="">Lab</label>
+						 	<label><input type="checkbox" value="abc" id="lab1">Lab</label>
 						</div>
 			      	</td>
 			      	<td>
 			      		<div class="checkbox">
-						 	<label><input type="checkbox" value="">Lab</label>
+						 	<label><input type="checkbox" id="lab2">Lab</label>
 						</div>
 			      	</td>
 			      	<td>
 			      		<div class="checkbox">
-						 	<label><input type="checkbox" value="">Lab</label>
+						 	<label><input type="checkbox" id="lab3">Lab</label>
 						</div>
 			      	</td>
 			      	<td>
 			      		<div class="checkbox">
-						 	<label><input type="checkbox" value="">Lab</label>
+						 	<label><input type="checkbox" id="lab4">Lab</label>
 						</div>
 			      	</td>
 			      	<td>
 			      		<div class="checkbox">
-						 	<label><input type="checkbox" value="">Lab</label>
+						 	<label><input type="checkbox" id="lab5">Lab</label>
 						</div>
 			      	</td>
 			      	<td>
 			      		<div class="checkbox">
-						 	<label><input type="checkbox" value="">Lab</label>
+						 	<label><input type="checkbox" id="lab6">Lab</label>
 						</div>
 			      	</td>
 			      </tr>
 
 			      <tr>
 			      		<th>
-			      			LAB Floor 
+			      			LAB class 
 			      		</th>
 			      		<td>
-			      			<div class="radio">
-							 	<label><input type="radio" name="optradio">Floor 1 (D-104)</label>
-							</div>
-			      		</td>
-			      		<td>
-			      			<div class="radio">
-							 	<label><input type="radio" name="optradio">Floor 2 (D-204)</label>
-							</div>
+			      			<select id="labClass" class="form-control">
+			      				<option>1A-1B</option>
+			      				<option>1A-1C</option>
+			      				<option>1A-1D</option>
+			      				<option>1B-1C</option>
+			      				<option>1B-1D</option>
+			      				<option>1C-1D</option>
+			      				<option>2A-2B</option>
+			      				<option>2A-2C</option>
+			      				<option>2A-2D</option>
+			      				<option>2B-2C</option>
+			      				<option>2B-2D</option>
+			      				<option>2C-2D</option>
+							</select>
 			      		</td>
 			      </tr>
 			      <tr>
@@ -230,6 +223,8 @@
             	<div id="successMessage"></div>
   		</div>
 	</div>
+
 	<script src="loadSubject.js"></script>
+	<!-- 	<script src="checkUser.js"></script> -->
 </body>
 </html>

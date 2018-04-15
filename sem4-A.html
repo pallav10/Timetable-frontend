@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="manifest" href="manifest-android.json">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+
+		<nav class = "navbar navbar-default" role = "navigation">
+	   
+			<div class = "navbar-header">
+				<a class = "navbar-brand" href = "#">BMIIT</a>
+			</div>
+
+			<div class="col-md-6">
+		   <div class="dropdown">
+			  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Semester
+			  <span class="caret"></span></button>
+			  <ul class="dropdown-menu">
+			    <li><a href="sem1-A.html">Semester 1 - A</a></li>
+			    <li><a href="sem1-B.html">Semester 1 - B</a></li>
+			    <li><a href="sem2-A.html">Semester 2 - A</a></li>
+			    <li><a href="sem2-B.html">Semester 2 - B</a></li>
+			    <li><a href="sem3-A.html">Semester 3 - A</a></li>
+			    <li><a href="sem3-B.html">Semester 3 - B</a></li>
+			    <li><a href="sem4-A.html">Semester 4 - A</a></li>
+			    <li><a href="sem4-B.html">Semester 4 - B</a></li>
+			    <li><a href="sem5-A.html">Semester 5 - A</a></li>
+			    <li><a href="sem5-B.html">Semester 5 - B</a></li>
+			    <li><a href="sem6-A.html">Semester 6 - A</a></li>
+			    <li><a href="sem6-B.html">Semester 6 - B</a></li>
+			    <li><a href="sem7-A.html">Semester 7 - A</a></li>
+			    <li><a href="sem8-A.html">Semester 8 - A</a></li>
+			    <li><a href="sem9-A.html">Semester 9 - A</a></li>
+			    <li><a href="sem10-A.html">Semester 10 - A</a></li>
+			  
+			    
+			  </ul>
+			</div>
+  			</div>
+  			<!--  <div align="right" class="col-md-4 col-xs-12 buttons float-sm-left">
+  			 	 <a href="login.html" class="btn btn-primary btn-sm button1" role="button">Login</a>
+                 <a href="registeration.html" class="btn btn-primary btn-sm button2" role="button">Register</a>
+  			 </div> -->
+			</nav>
+<!--___________________________________________________________TIMETABLE-TABLE-FORMAT__________________________________________________-->
+	<div class="col-sm-2">
+		<h3>Semester-4</h3>
+
+	</div>
+	<div class="col-sm-2">
+		<h3>Division-A</h3>
+		
+	</div>
+	
+
+	<div>          
+		<table class="table table-responsive table-striped table-hover">
+			<thead>
+				<th class="col-sm-1">#</th>
+				<th class="col-sm-2">Monday</th>
+				<th class="col-sm-2">Tuesday</th>
+				<th class="col-sm-2">Wednesday</th>
+				<th class="col-sm-2">Thursday</th>
+				<th class="col-sm-2">Friday</th>
+				<th class="col-sm-2">Saturday</th>
+			</thead>
+			<tr>
+			    <th>Lecture 1</th>
+			    <td  id="Monday1">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_1">a</td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_1">b</td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_1">c</td>
+					</tr>
+			    	</table>
+			    </td>
+			    <td id="Tuesday1">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_12"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_12"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_12"></td>
+					</tr>
+			    	</table>
+			    </td>
+			    <td id="Wednesday1">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_13"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_13"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_13"></td>
+					</tr>
+			    	</table>
+			    </td>
+				<td id="Thursday1">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_14"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_14"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_14"></td>
+					</tr>
+			    	</table>
+			    </td>
+				<td id="Friday1">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_15"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_15"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_15"></td>
+					</tr>
+			    	</table>
+			    </td>
+				<td id="Saturday1">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_16"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_16"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_16"></td>
+					</tr>
+			    	</table>
+			    </td>
+			</tr>
+			<tr>
+			    <th>Lecture 2</th>
+			    <td id="Monday2">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_21"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_21"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_21"></td>
+					</tr>
+			    	</table>
+			    </td>
+				<td id="Tuesday2">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_22"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_22"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_22"></td>
+					</tr>
+			    	</table>
+			    </td>
+			    <td id="Wednesday2">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_23"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_23"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_23"></td>
+					</tr>
+			    	</table>
+			    </td>
+				 <td id="Thursday2">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_24"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_24"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_24"></td>
+					</tr>
+			    	</table>
+			    </td>
+				<td id="Friday2">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_25"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_25"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_25"></td>
+					</tr>
+			    	</table>
+			    </td>
+			 	<td id="Saturday2">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_26"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_26"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_26"></td>
+					</tr>
+			    	</table>
+			    </td>
+			</tr>
+			<tr>
+			    <th>Lecture 3</th>
+			    <td id="Monday3">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_31"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_31"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_31"></td>
+					</tr>
+			    	</table>
+			    </td>
+			    <td id="Tuesday3">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_32"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_32"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_32"></td>
+					</tr>
+			    	</table>
+			    </td>
+			    <td id="Wednesday3">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_33"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_33"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_33"></td>
+					</tr>
+			    	</table>
+			    </td>
+				 <td id="Thursday3">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_34"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_34"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_34"></td>
+					</tr>
+			    	</table>
+			    </td>
+				<td id="Friday3">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_35"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_35"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_35"></td>
+					</tr>
+			    	</table>
+			    </td>
+			 	<td id="Saturday3">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_36"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_36"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_36"></td>
+					</tr>
+			    	</table>
+			    </td>
+			</tr>
+			<tr>
+			    <th>Lecture 4</th>
+			     <td id="Monday4">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_41"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_41"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_41"></td>
+					</tr>
+			    	</table>
+			    </td>
+				<td id="Tuesday4">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_42"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_42"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_42"></td>
+					</tr>
+			    	</table>
+			    </td>
+			    <td id="Wednesday4">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_43"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_43"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_43"></td>
+					</tr>
+			    	</table>
+			    </td>
+				<td id="Thursday4">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_44"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_44"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_44"></td>
+					</tr>
+			    	</table>
+			    </td>
+				<td id="Friday4">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_45"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_45"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_45"></td>
+					</tr>
+			    	</table>
+			    </td>
+				<td id="Saturday4">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_46"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_46"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_46"></td>
+					</tr>
+			    	</table>
+			    </td>
+			</tr>
+			<tr>
+			    <th>Lecture 5</th>
+			     <td id="Monday5">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_51"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_51"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_51"></td>
+					</tr>
+			    	</table>
+			    </td>
+			    <td id="Tuesday5">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_52"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_52"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_52"></td>
+					</tr>
+			    	</table>
+			    </td>
+			    <td id="Wednesday5">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_53"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_53"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_53"></td>
+					</tr>
+			    	</table>
+			    </td>
+				<td id="Thursday5">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_54"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_54"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_54"></td>
+					</tr>
+			    	</table>
+			    </td>
+			 	<td id="Friday5">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_55"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_55"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_55"></td>
+					</tr>
+			    	</table>
+			    </td>
+<!--			    <td>
+			    	<table>
+			    	<tr>
+			    		<td>A</td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td>b</td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td></td>
+					</tr>
+			    	</table>
+			    </td>
+			</tr>
+-->			<tr>
+			    <th>Lecture 6</th>
+			     <td id="Monday6">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_61"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_61"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_61"></td>
+					</tr>
+			    	</table>
+			    </td>
+			    <td id="Tuesday6">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_62"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_62"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_62"></td>
+					</tr>
+			    	</table>
+			    </td>
+			    <td id="Wednesday6">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_63"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_63"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_63"></td>
+					</tr>
+			    	</table>
+			    </td>
+				<td id="Thursday6">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_64"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_64"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_64"></td>
+					</tr>
+			    	</table>
+			    </td>
+				<td id="Friday6">
+			    	<table>
+			    	<tr>
+			    		<td id="sub_m_65"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="fac_m_65"></td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td id="clLoc_m_65"></td>
+					</tr>
+			    	</table>
+			    </td>
+<!--			    <td>
+			    	<table>
+			    	<tr>
+			    		<td>A</td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td>b</td>
+					</tr>
+			    	</table>
+			    	<table>
+			    	<tr>
+			    		<td></td>
+					</tr>
+			    	</table>
+			    </td>							-->
+			</tr>
+		</table>
+	</div>
+
+
+
+
+
+
+	</div>
+	<script src="sem4-A.js"></script>
+</body>
+</html>
